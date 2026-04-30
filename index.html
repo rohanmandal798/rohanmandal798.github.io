@@ -2,59 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Rohan Mandal | DevOps Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rohan Mandal | DevOps Engineer</title>
 
   <style>
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: Arial, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
     }
 
     header {
       text-align: center;
-      padding: 50px 20px;
+      padding: 40px 20px;
       background: #020617;
     }
 
-    img {
-      width: 120px;
-      height: 120px;
-      border-radius: 50%;
-      margin-bottom: 15px;
-      border: 3px solid #38bdf8;
+    h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
 
-    h1 { margin: 10px 0; }
-    h2 { color: #38bdf8; }
+    h2 {
+      border-bottom: 2px solid #38bdf8;
+      padding-bottom: 5px;
+    }
 
     .container {
       width: 90%;
       max-width: 1000px;
       margin: auto;
-    }
-
-    .section {
-      margin: 40px 0;
+      padding: 20px;
     }
 
     .card {
       background: #1e293b;
       padding: 20px;
+      margin: 15px 0;
       border-radius: 10px;
-      margin-bottom: 15px;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #38bdf8;
-      color: #000;
-      padding: 5px 10px;
-      margin: 5px;
-      border-radius: 5px;
-      font-size: 14px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
     }
 
     a {
@@ -62,11 +49,24 @@
       text-decoration: none;
     }
 
+    ul {
+      padding-left: 20px;
+    }
+
     footer {
       text-align: center;
       padding: 20px;
       background: #020617;
-      margin-top: 40px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #38bdf8;
+      color: #000;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 5px;
+      font-size: 0.8rem;
     }
   </style>
 </head>
@@ -74,96 +74,104 @@
 <body>
 
 <header>
-  <img src="profile.jpg" alt="Profile Photo">
   <h1>Rohan Mandal</h1>
-  <p>AWS & DevOps Engineer</p>
-  <p>📍 Your College Name</p>
+  <p>Aspiring DevOps Engineer | AWS | Docker | CI/CD | Cloud Automation</p>
+  <p>
+    <a href="https://github.com/your-username">GitHub</a> |
+    <a href="#">LinkedIn</a> |
+    <a href="mailto:youremail@gmail.com">Email</a>
+  </p>
 </header>
 
 <div class="container">
 
-  <!-- ABOUT -->
-  <div class="section">
-    <h2>👨‍💻 About Me</h2>
+  <section>
+    <h2>Professional Summary</h2>
     <div class="card">
       <p>
-        I am an aspiring DevOps and Cloud Engineer with hands-on experience in AWS, Docker, Jenkins, and Terraform. 
-        I focus on building real-world projects including CI/CD pipelines, cloud deployments, and automation.
+        Aspiring DevOps Engineer with hands-on experience in AWS cloud services,
+        CI/CD pipelines, and containerization. Skilled in automating deployments
+        using Docker, GitHub Actions, and Jenkins. Strong foundation in Linux,
+        networking, and cloud security with a focus on scalable infrastructure.
       </p>
     </div>
-  </div>
+  </section>
 
-  <!-- SKILLS -->
-  <div class="section">
-    <h2>🛠 Skills</h2>
-    <div class="card skills">
-      <span>AWS (EC2, S3, IAM)</span>
-      <span>Docker</span>
-      <span>Jenkins</span>
-      <span>Terraform</span>
-      <span>Linux</span>
-      <span>Git & GitHub</span>
-      <span>Nginx / Apache</span>
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="card">
+      <p><strong>Cloud:</strong> AWS (EC2, S3, IAM, VPC, CloudWatch)</p>
+      <p><strong>DevOps:</strong> Docker, Jenkins, GitHub Actions</p>
+      <p><strong>IaC:</strong> Terraform (Basic)</p>
+      <p><strong>Scripting:</strong> Bash, Python</p>
+      <p><strong>Version Control:</strong> Git, GitHub</p>
+      <p><strong>OS:</strong> Linux (Ubuntu, Kali)</p>
     </div>
-  </div>
+  </section>
 
-  <!-- PROJECTS -->
-  <div class="section">
-    <h2>🚀 Projects</h2>
+  <section>
+    <h2>🚀 Featured Project</h2>
+    <div class="card">
+      <h3>CI/CD Pipeline on AWS</h3>
+      <p>
+        Designed and implemented an automated CI/CD pipeline using GitHub Actions
+        and Docker to deploy applications on AWS EC2.
+      </p>
+      <ul>
+        <li>Automated build, test, and deployment process</li>
+        <li>Containerized application using Docker</li>
+        <li>Deployed on AWS EC2</li>
+      </ul>
+      <p><a href="https://github.com/your-username/cicd-project">View Project</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>DevOps Projects</h2>
 
     <div class="card">
-      <h3>CI/CD Pipeline (Jenkins + Docker)</h3>
-      <p>Automated deployment using Jenkins pipeline and Docker containerization.</p>
+      <h3>Dockerized Web Application</h3>
+      <ul>
+        <li>Containerized full-stack application</li>
+        <li>Used Docker Compose for multi-container setup</li>
+        <li>Deployed on AWS EC2</li>
+      </ul>
+      <p><a href="https://github.com/your-username/docker-project">GitHub Repo</a></p>
     </div>
 
     <div class="card">
-      <h3>S3 File Upload Web App</h3>
-      <p>Developed a web application to upload files directly to AWS S3 using Node.js backend.</p>
+      <h3>Terraform AWS Infrastructure</h3>
+      <ul>
+        <li>Provisioned EC2, VPC using Terraform</li>
+        <li>Automated infrastructure deployment</li>
+      </ul>
+      <p><a href="https://github.com/your-username/terraform-project">GitHub Repo</a></p>
     </div>
 
+  </section>
+
+  <section>
+    <h2>Practical Experience</h2>
     <div class="card">
-      <h3>Terraform EC2 Automation</h3>
-      <p>Provisioned AWS infrastructure using Infrastructure as Code (Terraform).</p>
+      <ul>
+        <li>Configured AWS IAM roles and policies</li>
+        <li>Managed S3 bucket permissions</li>
+        <li>Set up VPC networking</li>
+        <li>Monitored systems using CloudWatch</li>
+        <li>Linux server management</li>
+      </ul>
     </div>
+  </section>
 
-  </div>
-
-  <!-- CERTIFICATES -->
-  <div class="section">
-    <h2>📜 Certifications</h2>
+  <section>
+    <h2>Certifications</h2>
     <div class="card">
-      <p>• AWS Cloud Practitioner (if completed)</p>
-      <p>• Google IT Support / DevOps Courses</p>
+      <ul>
+        <li>AWS Certified Cloud Practitioner (In Progress)</li>
+        <li>AWS Solutions Architect Associate (Planned)</li>
+      </ul>
     </div>
-  </div>
-
-  <!-- EDUCATION -->
-  <div class="section">
-    <h2>🎓 Education</h2>
-    <div class="card">
-      <p><strong>Your Degree</strong></p>
-      <p>Your College Name</p>
-      <p>Year: 202X – 202X</p>
-    </div>
-  </div>
-
-  <!-- LANGUAGES -->
-  <div class="section">
-    <h2>🌐 Languages</h2>
-    <div class="card">
-      <p>English, Hindi, Nepali (edit accordingly)</p>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="section">
-    <h2>📬 Contact</h2>
-    <div class="card">
-      <p>Email: your@email.com</p>
-      <p>GitHub: <a href="https://github.com/rohanmandal798">Profile</a></p>
-      <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
-    </div>
-  </div>
+  </section>
 
 </div>
 
